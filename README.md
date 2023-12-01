@@ -22,6 +22,7 @@ Criamos um projeto em Python para realizar o cadastro do paciente ao hospital, p
 ## Lista de requisitos e dependências:
 
 	colorama
+ 	time
 
 ## Link do Vídeo:
 
