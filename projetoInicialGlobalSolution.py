@@ -33,16 +33,19 @@ def cpf_ja_cadastrado(cpf):
             return True
     return False
 
+# fazendo o menu
 def menu():
     while True:
         titulo()
+        # deixando o usúario escolher a função que deseja
         escolha_opcao=str(input(f"Escolha a funcionalidade que deseja:"
                                 f"\n{Fore.LIGHTBLUE_EX}1.{Fore.RESET} Fazer cadastro"
                                 f"\n{Fore.LIGHTBLUE_EX}2.{Fore.RESET} Visualizar dados de cadastro"
                                 f"\n{Fore.LIGHTBLUE_EX}3.{Fore.RESET} Contato"
                                 f"\n{Fore.LIGHTBLUE_EX}4.{Fore.RESET} Sair"
                                 f"\nEscreva aqui: "))
-
+        
+# caso ele escolha a primeira opção, pede todos os dados e salva em variaveis
         if escolha_opcao=='1' or escolha_opcao.lower()=="fazer cadastro":
             print(f"{Fore.LIGHTYELLOW_EX}Preencha os dados do cadastro abaixo:")
 
@@ -66,6 +69,7 @@ def menu():
 
             cadastrar(nome, sobrenome, data_de_nascimento, cpf, rg, convenio, nm_carteira, plano_saude, titular_convenio, email, telefone, contato_emergencia, tipo_sanguineo, alergias)
 
+        #caso escolha a segunda função  ele ira vizualizar os dados
         elif escolha_opcao == '2' or escolha_opcao.lower() == "visualizar dados de cadastro":
             cpf = str(input("Insira o CPF do cadastrado: "))
             dados = visualizar_dados_de_cadastro(cpf)
