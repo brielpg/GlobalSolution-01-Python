@@ -25,4 +25,4 @@ Criamos um projeto em Python para realizar o cadastro do paciente ao hospital, p
 
 ## Link do Vídeo:
 
-	.com.br
+	https://youtu.be/AqwTmDxDI8c
